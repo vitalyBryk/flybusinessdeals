@@ -1,0 +1,32 @@
+.toolbar-main-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .top-cotainer{
+        width: 100%;
+        min-height: 51px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #3c4e71;
+        .rigth-block{
+            display: flex;
+            flex-direction: row;
+            .mail-box{
+                font-size: 14px;
+                line-height: 48px;
+                color: #feffff;
+                font-family: "Font Awesome";
+            }
+        }
+    }
+    .bottom-container{
+        width: 100%;
+        height: calc(100% - 51px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
