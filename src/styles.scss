@@ -1,3 +1,20 @@
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { height: 100%; width: 100%;}
+body { margin: 0; font-family: 'Roboto', "Helvetica Neue", sans-serif; }
+
+
+  @font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../src/assets/fonts/Montserrat-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url('../src/assets/fonts/Montserrat-SemiBold.ttf');
+  }
+
+
+  @font-face {
+    font-family: 'Ubuntu-Light';
+    src: url('../src/assets/fonts/Ubuntu-Light.ttf');
+  }

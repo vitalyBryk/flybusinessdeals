@@ -7,8 +7,8 @@ import { HomePageComponent } from './views/home-page/home-page.component';
 import { AboutPageComponent } from './views/about-page/about-page.component';
 import { ContactsPageComponent } from './views/contacts-page/contacts-page.component';
 import { BeatPageComponent } from './views/beat-page/beat-page.component';
-import { ToolbarComponent } from './modules/toolbar/toolbar.component';
 import { FooterComponent } from './modules/footer/footer.component';
+import { NavbarComponent } from './modules/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +17,12 @@ import { FooterComponent } from './modules/footer/footer.component';
     AboutPageComponent,
     ContactsPageComponent,
     BeatPageComponent,
-    ToolbarComponent,
+    NavbarComponent,
     FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

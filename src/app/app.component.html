@@ -1,9 +1,9 @@
 <div class="main-app-container">
   <div class="top-main-container">
-    <app-toolbar></app-toolbar>
+    <app-navbar (navigationClick)="navigateTo($event)"></app-navbar>
   </div>
   <div class="main-content-container">
     <router-outlet></router-outlet>
+    <app-footer></app-footer>
   </div>
-  <div class="bottom-main-container"></div>
 </div>

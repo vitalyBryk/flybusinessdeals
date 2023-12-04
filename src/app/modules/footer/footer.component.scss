@@ -1,0 +1,86 @@
+.footer-main-container{
+    height: 315px;
+    width: 100%;
+    background-color: #713b4d;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .logo-container{
+        flex-grow: 7;
+        display: flex;
+        justify-content: flex-end;
+        .logo-box{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        img{
+            max-width: 250px;
+        }
+        .year-container{
+            font-family: "Ubuntu";
+            font-size: 13px;
+            letter-spacing: 0px;
+            color: #e9d8de;
+            padding-top: 40px;
+        }
+    }
+
+    .info-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-grow: 6;
+        .about-container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            .info-box{
+                margin-top: 15px;
+                max-width: 250px;
+            }
+        }
+
+        .contacts-container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .info-box{
+                margin-top: 15px;
+            }
+        }
+        .social-container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            .social-box{
+                margin-top: 15px;
+                img{
+                    transform: scale(0.65);
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+    .emty-div{
+        flex-grow: 6; 
+    }
+
+
+    .info-box{
+        font-family: "Ubuntu";
+        font-size: 15px;
+        color: #e9d8de;
+    }
+
+
+    .title{
+        font-size: 16px;
+        color: #ffffff;
+        font-family: "Montserrat-SemiBold";
+        text-transform: uppercase;
+    }
+
+}

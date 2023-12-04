@@ -1,0 +1,29 @@
+<div class="toolbar-main-container">
+    <div class="top-cotainer">
+        <div class="mail-box">
+            <i class="fa-regular fa-envelope-open icon-style"></i>
+            <div class="text-container">{{mailDates}}</div>
+        </div>
+        <div class="number-box">
+            <i class="fa-solid fa-phone-flip icon-style"></i>
+            <div class="text-container">{{phoneDates}}</div>
+        </div>
+        <div class="social-box">
+            <img src="../../../assets/img/facebook-logo-2428.png">
+        </div>
+    </div>
+    <div class="bottom-container">
+        <div class="logo-box">
+            <img src="../../../assets/img/logo.png">
+        </div>
+        <div class="emty-div"></div>
+        <div class="nav-menu-box">
+            <div class="btn-block">
+                <div class="menu-btn" (click)="navBarBtnClick($event, 'home')">HOME</div>
+                <div class="menu-btn" (click)="navBarBtnClick($event, 'beat')">BEAT THE DEAL</div>
+                <div class="menu-btn" (click)="navBarBtnClick($event, 'about')">ABOUT US</div>
+                <div class="menu-btn" (click)="navBarBtnClick($event, 'contacts')">CONTACT US</div>  
+            </div>
+        </div>
+    </div>
+</div>

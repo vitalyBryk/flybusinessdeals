@@ -3,9 +3,15 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    min-width: max-content;
     .top-main-container{
-        height: 24%;
+        height: 20%;
+        width: 100%;
     };
-    .main-content-container{};
-    .bottom-main-container{};
+    .main-content-container{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    };
 }

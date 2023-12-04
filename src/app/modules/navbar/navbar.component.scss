@@ -1,0 +1,123 @@
+.toolbar-main-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-width: max-content;
+    min-height: max-content;
+    .top-cotainer{
+        width: 100%;
+        min-height: 51px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        background-color: #3c4e71;
+        min-width: max-content;
+        min-height: max-content;
+        .mail-box{
+            flex-grow: 5;
+            font-size: 14px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            .icon-style{
+                color: #feffff;
+                font-size: 14px;
+            }
+            .text-container{
+                padding-left: 10px;
+                font-size: 14px;
+                color: #feffff;
+                font-family: "Arial";
+            }
+        }
+        
+        .number-box{
+            flex-grow: 7;
+            display: flex;
+            flex-direction: row;
+            padding: 0px 30px;
+            justify-content: flex-start;
+            align-items: center;
+            .icon-style{
+                color: #feffff;
+                font-size: 17px;
+                line-height: 27px;
+            }
+            .text-container{
+                padding-left: 10px;
+                font-family: 'Montserrat-Bold';
+                color: #feffff;
+                font-size: 15px;
+                text-wrap: nowrap;
+            }
+        }
+
+    .social-box{
+        flex-grow: 5;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        img{
+            transform: scale(0.65);
+            width: 32px;
+            height: 32px;
+        }
+    }
+    }
+    .bottom-container{
+        width: 100%;
+        height: calc(100% - 31px);
+        display: flex;
+        min-width: max-content;
+        min-height: 115px;
+        flex-direction: row;
+        background-color: #feffff;
+        .logo-box{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            height: 100%;
+            flex-grow: 8;
+            img{
+                max-width: 375px;
+            }
+        }
+        .nav-menu-box{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            flex-grow: 9;
+            height: 100%;
+            .btn-block{
+                display: flex;
+                flex-direction: row;
+                height:40px;
+                align-items: center;
+                padding-top: 43px;
+               .menu-btn{
+                    display: flex;
+                    align-items: center;
+                    font-size: 15px;
+                    line-height: 17px;
+                    text-transform: uppercase;
+                    font-family: 'Montserrat-Bold';
+                    border-radius: 20px;
+                    height: 40px;
+                    padding: 0px 30px;
+                    margin: 0px 3px;
+                }
+                .menu-btn:hover{
+                    cursor: pointer;
+                    background-color: lightgrey;
+                }
+            }
+        }
+
+        .emty-div{
+            flex-grow: 2;
+        }
+    }
+}

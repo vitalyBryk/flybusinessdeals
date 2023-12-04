@@ -15,4 +15,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {}
 
+
+  public navigateTo(event:string){
+    this.router.navigate([event])
+  }
 }
