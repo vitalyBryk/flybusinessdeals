@@ -10,6 +10,7 @@ import { BeatPageComponent } from './views/beat-page/beat-page.component';
 import { FooterComponent } from './modules/footer/footer.component';
 import { NavbarComponent } from './modules/navbar/navbar.component';
 import { SearchFlightComponent } from './modules/search-flight/search-flight.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SearchFlightComponent } from './modules/search-flight/search-flight.com
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

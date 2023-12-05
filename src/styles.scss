@@ -1,4 +1,39 @@
 
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$flybusinessdeals-primary: mat.define-palette(mat.$indigo-palette);
+$flybusinessdeals-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$flybusinessdeals-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$flybusinessdeals-theme: mat.define-light-theme((
+  color: (
+    primary: $flybusinessdeals-primary,
+    accent: $flybusinessdeals-accent,
+    warn: $flybusinessdeals-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($flybusinessdeals-theme);
+
+
 html, body { height: 100%; width: 100%;}
 body { margin: 0; font-family: 'Roboto', "Helvetica Neue", sans-serif; }
 
@@ -18,3 +53,22 @@ body { margin: 0; font-family: 'Roboto', "Helvetica Neue", sans-serif; }
     font-family: 'Ubuntu-Light';
     src: url('../src/assets/fonts/Ubuntu-Light.ttf');
   }
+
+
+  .global-btn{
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    line-height: 17px;
+    text-transform: uppercase;
+    font-family: 'Montserrat-Bold';
+    border-radius: 20px;
+    height: 40px;
+    padding: 0px 30px;
+    margin: 0px 3px;
+  }
+
+  .global-btn:hover{
+    cursor: pointer;
+    background-color: lightgrey;
+}
