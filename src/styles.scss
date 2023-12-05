@@ -71,4 +71,15 @@ body { margin: 0; font-family: 'Roboto', "Helvetica Neue", sans-serif; }
   .global-btn:hover{
     cursor: pointer;
     background-color: lightgrey;
-}
+  }
+
+  .purple-btn{
+    background-color: #713b4d;
+    color: #feffff;
+  }
+
+  .purple-btn:hover{
+    background-color: #5f3241;
+    color: #feffffb4;
+  }
+

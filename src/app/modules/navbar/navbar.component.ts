@@ -35,22 +35,18 @@ export class NavbarComponent implements OnInit {
    const timeout = setTimeout(() => {
     const id = this.router.url.replace("/","");
     this.previusTarget = document.getElementById(id);
-    this.previusTarget.style.backgroundColor = "#713b4d";
-    this.previusTarget.style.color = "#feffff";
+    this.previusTarget.classList.add("purple-btn");
+    // this.previusTarget.style.backgroundColor = "#713b4d";
+    // this.previusTarget.style.color = "#feffff";
     clearTimeout(timeout);
    }, 10); 
   }
 
   setBackgroudSelectedItem(event:any):void{
-    const defaultBgColor = "white";
-    const defaultTextColor = "#393939";
     if(this.previusTarget){
-      this.previusTarget.style.backgroundColor = defaultBgColor;
-      this.previusTarget.style.color = defaultTextColor;
+      this.previusTarget.classList.remove("purple-btn");
     } 
     this.previusTarget = event.target;
-    event.target.style.backgroundColor = "#713b4d";
-    event.target.style.color = "#feffff";
-
+    event.target.classList.add("purple-btn");
   }
 }

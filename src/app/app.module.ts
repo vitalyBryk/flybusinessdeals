@@ -12,6 +12,10 @@ import { NavbarComponent } from './modules/navbar/navbar.component';
 import { SearchFlightComponent } from './modules/search-flight/search-flight.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +31,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatDatepickerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
