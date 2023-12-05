@@ -9,7 +9,7 @@
             <div class="text-container">{{phoneDates}}</div>
         </div>
         <div class="social-box">
-            <img src="../../../assets/img/facebook-logo-2428.png">
+            <img src="../../../assets/img/facebook-logo-2428.png"  (click)="socialMediaIconClick()">
         </div>
     </div>
     <div class="bottom-container">
@@ -19,10 +19,10 @@
         <div class="emty-div"></div>
         <div class="nav-menu-box">
             <div class="btn-block">
-                <div class="menu-btn" (click)="navBarBtnClick($event, 'home')">HOME</div>
-                <div class="menu-btn" (click)="navBarBtnClick($event, 'beat')">BEAT THE DEAL</div>
-                <div class="menu-btn" (click)="navBarBtnClick($event, 'about')">ABOUT US</div>
-                <div class="menu-btn" (click)="navBarBtnClick($event, 'contacts')">CONTACT US</div>  
+                <div class="menu-btn" id="home" (click)="navBarBtnClick($event, 'home')">HOME</div>
+                <div class="menu-btn" id="beat" (click)="navBarBtnClick($event, 'beat')">BEAT THE DEAL</div>
+                <div class="menu-btn" id="about" (click)="navBarBtnClick($event, 'about')">ABOUT US</div>
+                <div class="menu-btn" id="contacts" (click)="navBarBtnClick($event, 'contacts')">CONTACT US</div>  
             </div>
         </div>
     </div>

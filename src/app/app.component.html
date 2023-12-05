@@ -1,9 +1,11 @@
 <div class="main-app-container">
   <div class="top-main-container">
-    <app-navbar (navigationClick)="navigateTo($event)"></app-navbar>
+    <app-navbar (navigationClick)="navigateTo($event)" (socialMediaClick)="socialMediaIconClick()"></app-navbar>
   </div>
   <div class="main-content-container">
-    <router-outlet></router-outlet>
-    <app-footer></app-footer>
+      <router-outlet></router-outlet>
+  </div>
+  <div class="footer-box">
+    <app-footer (socialMediaClick)="socialMediaIconClick()"></app-footer>
   </div>
 </div>

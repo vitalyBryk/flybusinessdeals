@@ -1,5 +1,5 @@
 .footer-main-container{
-    height: 315px;
+    height: 100%;
     width: 100%;
     background-color: #713b4d;
     display: flex;
@@ -60,6 +60,10 @@
                     transform: scale(0.65);
                     width: 32px;
                     height: 32px;
+                }
+
+                img:hover{
+                    cursor: pointer;
                 }
             }
         }

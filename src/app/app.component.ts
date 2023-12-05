@@ -16,7 +16,11 @@ export class AppComponent implements OnInit {
   ngOnInit(): void {}
 
 
-  public navigateTo(event:string){
+  public navigateTo(event:string):void{
     this.router.navigate([event])
+  }
+
+  public socialMediaIconClick():void{
+    console.log("go to social media");
   }
 }

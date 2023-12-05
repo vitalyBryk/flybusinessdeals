@@ -9,6 +9,7 @@ import { ContactsPageComponent } from './views/contacts-page/contacts-page.compo
 import { BeatPageComponent } from './views/beat-page/beat-page.component';
 import { FooterComponent } from './modules/footer/footer.component';
 import { NavbarComponent } from './modules/navbar/navbar.component';
+import { SearchFlightComponent } from './modules/search-flight/search-flight.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NavbarComponent } from './modules/navbar/navbar.component';
     ContactsPageComponent,
     BeatPageComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    SearchFlightComponent
   ],
   imports: [
     BrowserModule,

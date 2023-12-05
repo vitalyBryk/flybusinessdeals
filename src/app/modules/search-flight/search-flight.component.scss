@@ -1,0 +1,31 @@
+.search-main-container{
+    height: 750px;
+    width: 100%;
+    display: flex;
+    min-width: max-content;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../../assets/img/flight-1.png);
+    background-size: cover;
+    overflow: hidden;
+    .text-box{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        .title-text{
+            font-size: 70px;
+            line-height: 75px;
+            color: #ffffff;
+            font-family: "Montserrat-Bold";
+        }
+        .subtitle-text{
+            font-size: 18px;
+            letter-spacing: 4px;
+            color: #feffff;
+            font-family: "Montserrat-Bold";
+            line-height: 17px;
+            text-transform: uppercase;
+            padding-top: 15px;
+        }
+    }
+}
