@@ -80,7 +80,7 @@
         background-color: #feffff;
         .logo-box{
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             justify-content: flex-end;
             height: 100%;
             flex-grow: 8;
@@ -91,7 +91,7 @@
         .nav-menu-box{
             display: flex;
             flex-direction: row;
-            align-items: flex-start;
+            align-items: center;
             flex-grow: 9;
             height: 100%;
             .btn-block{
@@ -99,7 +99,7 @@
                 flex-direction: row;
                 height:40px;
                 align-items: center;
-                padding-top: 43px;
+                padding-top: 20px;
             }
         }
 

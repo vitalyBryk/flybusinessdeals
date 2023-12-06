@@ -1,31 +1,133 @@
-.search-main-container{
+::ng-deep .search-main-container{
     height: 100%;
     width: 100%;
+    min-width: max-content;
     display: flex;
     flex-direction: column;
-    min-width: max-content;
     align-items: center;
     justify-content: center;
     background-image: url(../../../assets/img/flight-1.png);
-    background-size: cover;
-    .text-box{
+    background-size: 100% 100%;
+    background-position: center;
+    .all-content-container{
+        padding: 10px 0px;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        .title-text{
-            font-size: 70px;
-            line-height: 75px;
-            color: #ffffff;
-            font-family: "Montserrat-Bold";
+        justify-content: space-around;
+        .text-box{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            max-width: 845px;
+            overflow: hidden;
+            .title-text{
+                font-size: 70px;
+                line-height: 75px;
+                color: #ffffff;
+                font-family: "Montserrat-Bold";
+            }
+            .subtitle-text{
+                font-size: 18px;
+                letter-spacing: 4px;
+                color: #feffff;
+                font-family: "Montserrat-Bold";
+                line-height: 17px;
+                text-transform: uppercase;
+                padding-top: 15px;
+            }
         }
-        .subtitle-text{
-            font-size: 18px;
-            letter-spacing: 4px;
-            color: #feffff;
-            font-family: "Montserrat-Bold";
-            line-height: 17px;
-            text-transform: uppercase;
-            padding-top: 15px;
+
+        .btn-box{
+            max-width: max-content;
+            margin-top: 40px;
+        }
+        .search-form-box{
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            background-color: #3c4e71;
+            opacity: 0.800;
+            padding: 0px 30px;
+            min-height: 100px;
+            .search-conatiner{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            
+                .mdc-text-field--filled:not(.mdc-text-field--disabled){
+                    background-color: transparent !important;
+                    .mdc-floating-label{
+                        color: #c9c5d9;
+                        font-size: 15px;
+                        line-height: 17px;
+                        font-family: Montserrat-SemiBold;
+                    }
+                    .mat-mdc-select{
+                        font-family: "Ubuntu-Light";
+                        font-weight: 500 !important;
+                        color: #feffff !important;
+                        font-size: 15px;
+                        line-height: 17px;
+                    }
+                }
+                .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+                    font-family: "Ubuntu-Light";
+                    font-weight: 500 !important;
+                    color: #feffff !important;
+                    font-size: 15px;
+                    line-height: 17px;
+                }
+
+                .mat-mdc-select-placeholder{
+                    font-family: "Ubuntu-Light";
+                    font-weight: 500 !important;
+                    color: #feffff !important;
+                    font-size: 15px;
+                    line-height: 17px;
+                }
+
+                .mat-mdc-select-arrow{
+                    color: #feffff !important; 
+                }
+
+                .mdc-line-ripple::before{
+                    border-bottom: none !important;
+                }
+
+                .mat-mdc-icon-button svg{
+                    fill: #feffff !important ;
+                }
+
+                .mat-mdc-form-field-subscript-wrapper{
+                    display: none !important;
+                }
+
+                >*:not(.select-box){
+                    border-right: 1px dashed #c9c5d9;
+                }
+
+                .from-box{
+                    max-width: 160px;
+                }
+
+                .date-box{
+                    max-width: 162px;
+                }
+
+                .flight-to-box{
+                    max-width: 190px;
+                }
+
+                .select-box{
+                    max-width: 160px;
+                }
+
+                .global-btn{
+                    margin-left: 30px;
+                }
+            }
+            
         }
     }
 }

@@ -83,3 +83,24 @@ body { margin: 0; font-family: 'Roboto', "Helvetica Neue", sans-serif; }
     color: #feffffb4;
   }
 
+  .white-btn{
+    background-color: #feffff;
+    color: #713b4d;
+  }
+
+  .white-btn:hover{
+    background-color: #feffffb4;
+    color: #5f3241;
+  }
+
+  .select-panel-color{
+    background-color:#3c4e71 !important;
+    .mat-mdc-option{
+      font-family: "Ubuntu";
+      color: #feffff !important;
+      font-size: 15px;
+      line-height: 17px;
+    }
+}
+
+

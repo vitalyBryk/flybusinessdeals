@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './views/home-page/home-page.component';
@@ -11,10 +10,12 @@ import { FooterComponent } from './modules/footer/footer.component';
 import { NavbarComponent } from './modules/navbar/navbar.component';
 import { SearchFlightComponent } from './modules/search-flight/search-flight.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatInputModule} from '@angular/material/input'
 
 @NgModule({
   declarations: [
@@ -31,9 +32,15 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+
     MatFormFieldModule,
     MatSelectModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatInputModule,
+    
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,11 +1,60 @@
 <div class="search-main-container">
-    <div class="text-box">
-        <div class="title-text">{{titleText}}</div>
-        <div class="subtitle-text">{{subtitleText}}</div>
-    </div>
-    <div class="btn-box">
-        <div class="global-btn purple-btn" (click)="contactsBtnClick()">CONTACTS</div>
-    </div>
-    <div class="search-form-box">
+    <div class="all-content-container">
+        <div class="emty-div"></div>
+        <div class="emty-div"></div>
+        <div class="text-box">
+            <div class="title-text">{{titleText}}</div>
+            <div class="subtitle-text">{{subtitleText}}</div>
+            <div class="btn-box">
+                <div class="global-btn purple-btn" (click)="contactsBtnClick()">CONTACTS</div>
+            </div>
+        </div>
+
+        <div class="search-form-container">    
+            <div class="search-form-box">
+                <form class="search-conatiner" [formGroup]="searchFormGroup">
+                    <mat-form-field appearance="fill" floatLabel="always" class="from-box">
+                        <mat-label>FROM</mat-label>
+                        <mat-select required placeholder="Flying from" panelClass="select-panel-color" formControlName="flightFrom">
+                            <mat-option *ngFor="let state of selectedStates" [value]="state">{{state}}</mat-option>
+                        </mat-select>
+                    </mat-form-field>           
+                    <mat-form-field appearance="fill" floatLabel="always" class="flight-to-box">
+                        <mat-label>TO</mat-label>
+                        <mat-select required placeholder="Where are you flying" panelClass="select-panel-color" formControlName="flightTo">
+                            <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                                {{food.viewValue}}
+                            </mat-option> -->
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field appearance="fill" floatLabel="always" class="date-box">
+                        <mat-label>DEPARTURE</mat-label>
+                        <input matInput [matDatepicker]="picker1" formControlName="departureDate"> 
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                    
+                    <mat-form-field appearance="fill" floatLabel="always" class="date-box">
+                        <mat-label>RETURN</mat-label>
+                        <input matInput [matDatepicker]="picker2" formControlName="returnDate">
+                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>
+                    
+                    <mat-form-field appearance="fill" floatLabel="always" class="select-box">
+                        <mat-label>PASSENGERS</mat-label>
+                        <mat-select required placeholder="1/Business" panelClass="panel-color" formControlName="passengers">
+                            <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                                {{food.viewValue}}
+                            </mat-option> -->
+                        </mat-select>
+                    </mat-form-field>
+        
+                    <div class="global-btn white-btn" (click)="searchFlightClick()">SEARCH FLIGHT</div>
+        
+                </form>
+            </div>
+        </div>
     </div>
 </div>
