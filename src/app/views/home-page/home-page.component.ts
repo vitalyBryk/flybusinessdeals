@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class HomePageComponent {
 
+
+  public searchFlightClick(event:any){
+    console.log(event);
+    
+  }
 }

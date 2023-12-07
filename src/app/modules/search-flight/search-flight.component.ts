@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -8,6 +8,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class SearchFlightComponent implements OnInit {
 
+  @Output() searchFlight = new EventEmitter();
 
   public titleText: string = "Effortless travel begins with FlyBusinessDeals";
   public subtitleText: string = "We deliver business class perfection with ease";
@@ -48,16 +49,7 @@ export class SearchFlightComponent implements OnInit {
   }
 
   public searchFlightClick(){
-    console.log(this.searchFormGroup.value);
+    this.searchFlight.emit(this.searchFormGroup.value)
   }
 
-  onKey(value:any) { 
-    console.log(value)
-    this.selectedStates = this.search(value);
-  }
-
-  search(value: string) { 
-    let filter = value.toLowerCase();
-    return this.states.filter(option => option.toLowerCase().startsWith(filter));
-  }
 }

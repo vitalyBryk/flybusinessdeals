@@ -1,0 +1,29 @@
+<div class="best-deals-main-container">
+    <div class="best-deals-container">
+        <div class="best-deals-main-box">
+            <div class="title-container">
+                <div class="title-text">BEST DEALS</div>
+                <br />  
+                <div class="delimeter"></div>
+            </div>
+            <div class="cards-container">
+                <mat-card class="best-deals-card" *ngFor="let card of cardsArr">
+                    <img mat-card-image [src]="card.imageSrc" alt="Photo of a Shiba Inu">
+                    <mat-card-content class="deals-content">
+                        <p class="ofert-title" [innerHTML]="card.ofertTitle | numericHighlight"></p>
+                        <p class="ofert-info">
+                            {{card.ofertInfo}}
+                      </p>
+                    </mat-card-content>
+                    <mat-card-actions class="deals-card-actions">
+                        <div class="cost-info-box">$1,125</div>
+                        <div class="global-btn white-btn" (click)="readMoreClick()">BOOK NOW</div>
+                    </mat-card-actions>
+                  </mat-card>
+            </div>
+            <div class="btn-container">
+                <div class="global-btn purple-btn" (click)="readMoreClick()">READ MORE</div>
+            </div>
+        </div>
+    </div>
+</div>

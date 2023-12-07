@@ -3,24 +3,26 @@
     width: 100%;
     min-width: max-content;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-image: url(../../../assets/img/flight-1.png);
-    background-size: 100% 100%;
-    background-position: center;
+    background-size: 100% 130%;
+    background-repeat:no-repeat;
+    background-position: bottom;
+    padding: 10px 0px;
     .all-content-container{
-        padding: 10px 0px;
+        padding: 0px 15px;
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-evenly;
         .text-box{
             display: flex;
             flex-direction: column;
             justify-content: flex-end;
             max-width: 845px;
             overflow: hidden;
+            // padding: 20px 0px;
             .title-text{
                 font-size: 70px;
                 line-height: 75px;
@@ -103,7 +105,7 @@
                     display: none !important;
                 }
 
-                >*:not(.select-box){
+                >*:not(.select-box, .white-btn){
                     border-right: 1px dashed #c9c5d9;
                 }
 

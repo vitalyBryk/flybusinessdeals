@@ -10,12 +10,18 @@ import { FooterComponent } from './modules/footer/footer.component';
 import { NavbarComponent } from './modules/navbar/navbar.component';
 import { SearchFlightComponent } from './modules/search-flight/search-flight.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
+import {MatCardModule} from '@angular/material/card';
+import {MatInputModule} from '@angular/material/input';
+
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatNativeDateModule } from '@angular/material/core';
-import {MatInputModule} from '@angular/material/input'
+import { WelcomeComponent } from './modules/welcome/welcome.component';
+import { BestDealsComponent } from './modules/best-deals/best-deals.component'
+import { NumericHighlightPipe } from './pipes/numeric-highlight.pipe';
 
 @NgModule({
   declarations: [
@@ -26,7 +32,10 @@ import {MatInputModule} from '@angular/material/input'
     BeatPageComponent,
     NavbarComponent,
     FooterComponent,
-    SearchFlightComponent
+    SearchFlightComponent,
+    WelcomeComponent,
+    BestDealsComponent,
+    NumericHighlightPipe
   ],
   imports: [
     BrowserModule,
@@ -38,6 +47,7 @@ import {MatInputModule} from '@angular/material/input'
     MatDatepickerModule,
     MatNativeDateModule,
     MatInputModule,
+    MatCardModule,
     
     ReactiveFormsModule,
     FormsModule

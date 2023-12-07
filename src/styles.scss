@@ -38,69 +38,90 @@ html, body { height: 100%; width: 100%;}
 body { margin: 0; font-family: 'Roboto', "Helvetica Neue", sans-serif; }
 
 
-  @font-face {
-    font-family: 'Montserrat-Bold';
-    src: url('../src/assets/fonts/Montserrat-Bold.ttf');
-  }
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../src/assets/fonts/Montserrat-Bold.ttf');
+}
 
-  @font-face {
-    font-family: 'Montserrat-SemiBold';
-    src: url('../src/assets/fonts/Montserrat-SemiBold.ttf');
-  }
-
-
-  @font-face {
-    font-family: 'Ubuntu-Light';
-    src: url('../src/assets/fonts/Ubuntu-Light.ttf');
-  }
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url('../src/assets/fonts/Montserrat-SemiBold.ttf');
+}
 
 
-  .global-btn{
-    display: flex;
-    align-items: center;
+@font-face {
+  font-family: 'Ubuntu-Light';
+  src: url('../src/assets/fonts/Ubuntu-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Ubuntu-Regular';
+  src: url('../src/assets/fonts/Ubuntu-Regular.ttf');
+}
+
+
+.global-btn{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  line-height: 17px;
+  text-transform: uppercase;
+  font-family: 'Montserrat-Bold';
+  border-radius: 20px;
+  height: 40px;
+  padding: 0px 30px;
+  margin: 0px 3px;
+  user-select: none;
+  max-width: max-content;
+}
+
+.global-btn:hover{
+  cursor: pointer;
+  background-color: lightgrey;
+}
+
+.purple-btn{
+  background-color: #713b4d;
+  color: #feffff;
+}
+
+.purple-btn:hover{
+  background-color: #5f3241;
+  color: #feffffb4;
+}
+
+.white-btn{
+  background-color: #feffff;
+  color: #713b4d;
+}
+
+.white-btn:hover{
+  background-color: #feffffb4;
+  color: #5f3241;
+}
+
+.blue-btn{
+  background-color: #3b4d71;
+  color: #feffff;
+}
+
+.blue-btn:hover{
+  background-color: #364769;
+  color: #feffffb4;
+}
+
+.select-panel-color{
+  background-color:#3c4e71 !important;
+  .mat-mdc-option{
+    font-family: "Ubuntu";
+    color: #feffff !important;
     font-size: 15px;
     line-height: 17px;
-    text-transform: uppercase;
-    font-family: 'Montserrat-Bold';
-    border-radius: 20px;
-    height: 40px;
-    padding: 0px 30px;
-    margin: 0px 3px;
   }
+}
 
-  .global-btn:hover{
-    cursor: pointer;
-    background-color: lightgrey;
-  }
-
-  .purple-btn{
-    background-color: #713b4d;
-    color: #feffff;
-  }
-
-  .purple-btn:hover{
-    background-color: #5f3241;
-    color: #feffffb4;
-  }
-
-  .white-btn{
-    background-color: #feffff;
-    color: #713b4d;
-  }
-
-  .white-btn:hover{
-    background-color: #feffffb4;
-    color: #5f3241;
-  }
-
-  .select-panel-color{
-    background-color:#3c4e71 !important;
-    .mat-mdc-option{
-      font-family: "Ubuntu";
-      color: #feffff !important;
-      font-size: 15px;
-      line-height: 17px;
-    }
+.numeric{
+font-weight: bold;
 }
 
 
