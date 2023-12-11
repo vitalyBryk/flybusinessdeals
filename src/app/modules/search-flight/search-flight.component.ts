@@ -9,6 +9,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 export class SearchFlightComponent implements OnInit {
 
   @Output() searchFlight = new EventEmitter();
+  @Output() contactsClick = new EventEmitter();
 
   public titleText: string = "Effortless travel begins with FlyBusinessDeals";
   public subtitleText: string = "We deliver business class perfection with ease";
@@ -46,10 +47,11 @@ export class SearchFlightComponent implements OnInit {
   }
 
   public contactsBtnClick():void{
+    this.contactsClick.emit();
   }
 
-  public searchFlightClick(){
-    this.searchFlight.emit(this.searchFormGroup.value)
+  public searchFlightClick():void{
+    this.searchFlight.emit(this.searchFormGroup.value);
   }
 
 }

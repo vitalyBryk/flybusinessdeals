@@ -1,6 +1,6 @@
 <div class="home-main-container">
         <div class="search-box">
-                <app-search-flight (searchFlight)="searchFlightClick($event)"></app-search-flight>
+                <app-search-flight (searchFlight)="searchFlightClick($event)" (contactsClick)="contactsBtnClick()"></app-search-flight>
         </div>
         <div class="welcome-box">
                 <app-welcome (readMore)="readMoreClick($event)"></app-welcome>

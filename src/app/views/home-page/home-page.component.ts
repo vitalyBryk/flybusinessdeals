@@ -12,6 +12,10 @@ export class HomePageComponent {
     console.log(event);
   }
 
+  contactsBtnClick(){
+    console.log("contacts");
+  }
+
   readMoreClick(event:any){
     switch(event){
       case "welcome": console.log("welcome"); break;
