@@ -1,0 +1,21 @@
+<div class="choose-us-main-container">
+    <div class="choose-us-container">
+        <div class="title-container">
+            <div class="title-text">WHY CHOOSE US</div>
+            <br />  
+            <div class="delimeter"></div> 
+            <br />  
+         </div>
+         <div class="choose-us-info-container">
+            <div class="info-box" *ngFor="let choose of ChooseUsArr">
+                <div class="icon-box">
+                    <div class="icon"></div>
+                </div>
+                <br />  
+                <div class="subtitle">{{choose.subtitle}}</div>
+                <br />  
+                <div class="text-box">{{choose.info}}</div>
+            </div>
+        </div>
+    </div>
+</div>

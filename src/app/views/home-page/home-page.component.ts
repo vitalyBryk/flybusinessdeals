@@ -10,6 +10,17 @@ export class HomePageComponent {
 
   public searchFlightClick(event:any){
     console.log(event);
-    
+  }
+
+  readMoreClick(event:any){
+    switch(event){
+      case "welcome": console.log("welcome"); break;
+      case "deals": console.log("deals"); break;
+      case "about": console.log("about"); break;
+    }
+  }
+
+  bookNowClick(event:any){
+    console.log(event);
   }
 }

@@ -3,9 +3,19 @@
                 <app-search-flight (searchFlight)="searchFlightClick($event)"></app-search-flight>
         </div>
         <div class="welcome-box">
-                <app-welcome></app-welcome>
+                <app-welcome (readMore)="readMoreClick($event)"></app-welcome>
         </div>
         <div class="beast-deals-box">
-                <app-best-deals></app-best-deals>
+                <app-best-deals (readMore)="readMoreClick($event)" (bookNow)="bookNowClick($event)"></app-best-deals>
+        </div>
+        <div class="contact-us-box">
+                <app-countact-us></app-countact-us>
+        </div>
+        <div class="about-us-box">
+                <app-about-us (readMore)="readMoreClick($event)"></app-about-us>
+        </div>
+
+        <div class="choose-us-box">
+                <app-choose-us></app-choose-us>
         </div>
 </div>

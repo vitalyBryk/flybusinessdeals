@@ -1,0 +1,184 @@
+::ng-deep .contact-us-main-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c4e71;
+    .contact-us-container{
+        display: flex;
+        flex-direction: column;
+        width: 57.5%;
+        .title-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: max-content;
+            .title-text{
+                font-size: 35px;
+                color: #ffffff;
+                letter-spacing: 2px;
+                line-height: 17px;
+                font-family: "Montserrat-Bold";
+            }
+            .delimeter{
+                width: 170px;
+                height: 2px;
+                background-color: #ffffff;
+            }
+        }
+
+        .contact-us-form-container{
+            .contact-us-box{
+                display: flex;
+                width: 100%;
+                .left-form-box, .right-form-box{
+                    display: flex;
+                    flex-direction: column;
+                    min-height: 200px;
+                    justify-content: space-between;
+                    width: 50%;
+
+                    .contact-us-form-field{
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .mdc-floating-label{
+                        color: #feffff;
+                        font-size: 15px;
+                        line-height: 17px;
+                        font-family: "Montserrat-SemiBold";
+                    }
+
+                    .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+                        font-family: "Ubuntu-Light";
+                        font-weight: 500 !important;
+                        color: #feffff !important;
+                        font-size: 15px;
+                        line-height: 17px;
+                    }
+                    
+
+                    ::placeholder {
+                        color: #feffff
+                    }
+
+                    mat-error{
+                        font-family: "Ubuntu-Light" !important;
+                    }
+
+
+                    .mat-mdc-text-field-wrapper{
+                        background: transparent !important;
+                        border: 1px solid #ffffff;
+                        padding: 0px 10px;
+                        border-radius: 0px !important;
+                    }
+                
+                    .mat-mdc-input-element{
+                        color: #ffffff !important; 
+                    }
+
+                    .mat-mdc-form-field-icon-prefix {
+                        color: #ffffff !important; 
+                    }
+
+                    .mdc-line-ripple::before{
+                        border-bottom: none !important;
+                    }
+
+
+                    textarea{
+                        resize: none;
+                    }
+
+                    .text-area{
+                        height: 100%;
+                    }
+                }
+                .left-form-box{
+                    .contact-us-form-field{   
+                        margin-right: 6px;
+                    }
+                }
+
+                .right-form-box{
+                    .contact-us-form-field{   
+                        margin-left: 6px;
+                    }
+                }
+            }
+
+        }
+
+        .btns-container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            .code-input{
+                background: transparent;
+                border: 1px solid #ffffff !important;
+                color: #ffffff;
+                font-family: "Ubuntu-Light";
+                font-weight: 500 !important;
+                font-size: 15px;
+                line-height: 17px;
+
+            }
+
+            .code-input:focus{
+                outline: none;
+                border-color: transparent;
+            }
+
+            .code-container{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                min-height: 45px;
+            }
+            .code-box{
+                display: flex;
+                align-items: center;
+                margin: 0px 10px;
+                font-size: 12px;
+                letter-spacing: 1px;
+                line-height: 17px;
+                text-transform: uppercase;
+                padding: 0px 20px;
+                font-family: "Montserrat-Bold";
+                user-select: none;
+                color: #ffffff;
+                background-color: #713b4d;
+            }
+
+            .btn-submit{
+                text-transform: uppercase;
+                font-family: "Montserrat-Bold";
+                margin: 0px 10px;
+                font-size: 12px;
+                letter-spacing: 1px;
+                line-height: 17px;
+                background-color: #713b4d;
+                border: none;
+                color: #ffffff;
+            }
+
+            .btn-submit:hover{
+                cursor: pointer;
+                background-color: #5f3241;
+                color: #feffffb4;
+            }
+
+            .info-box{
+                font-size: 14px;
+                letter-spacing: 1px;
+                color: #ffffff;
+                font-family: "Ubuntu-Light"
+            }
+        }
+    }
+}

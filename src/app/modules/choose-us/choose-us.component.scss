@@ -1,0 +1,69 @@
+.choose-us-main-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c4e71;
+    .choose-us-container{
+        display: flex;
+        flex-direction: column;
+        .title-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: max-content;
+            .title-text{
+                font-size: 35px;
+                color: #ffffff;
+                letter-spacing: 2px;
+                line-height: 17px;
+                font-family: "Montserrat-Bold";
+            }
+            .delimeter{
+                width: 170px;
+                height: 2px;
+                background-color: #ffffff;
+            }
+        }
+        .choose-us-info-container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .info-box{
+                margin: 10px 10px;
+                display: flex;
+                flex-direction: column;
+                .icon-box{
+                    width: 100%;
+                    .icon{
+                        margin: 0 auto;
+                        border-radius: 62px;
+                        box-shadow: inset 0 0 3.5px #ffffff;
+                        border: 3px solid #713c4e;
+                        background-color: #713c4e;
+                        width: 123px;
+                        height: 123px;
+                    }
+                }
+                    .subtitle{
+                    margin: 0 auto;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    line-height: 17px;
+                    text-transform: uppercase;
+                    color: #ffffff;
+                    font-family: "Montserrat-Bold";
+                    max-width: 165px;
+                }
+                .text-box{
+                    font-family: "Ubuntu-Light";
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #ffffff;
+                    max-width: 280px;
+                }
+            }
+        }
+    }
+}

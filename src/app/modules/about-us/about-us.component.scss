@@ -1,0 +1,64 @@
+.about-us-main-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    .about-us-container{
+        display: flex;
+        align-items: center;
+        // width: 57.5%;
+        .about-us-left-container{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            // align-items: center;
+            justify-content: center;
+            .title-container{
+                .title-text{
+                    font-size: 35px;
+                    letter-spacing: 2px;
+                    line-height: 17px;
+                    color: #3c4e71;
+                    font-family: "Montserrat-Bold";
+                }
+                .delimeter{
+                    width: 170px;
+                    height: 2px;
+                    background-color: #713c4e;
+                }
+            } 
+            .info-container{
+                max-width: 560px;
+                .subtitle-box{
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    line-height: 25px;
+                    font-family: "Montserrat-Bold";
+                    color: #713c4e;
+                }
+                .info-box{
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    color: #2f2f2f;
+                    font-family: "Ubuntu-Light"
+                }
+            }
+        }
+
+        .about-us-right-container{
+            height: 100%;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            img{
+                max-width: 560px;
+                max-height: 470px;
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+    .about-us-container >*{
+        margin: 0px 10px;
+    }
+}

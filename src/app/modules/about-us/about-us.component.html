@@ -1,0 +1,24 @@
+<div class="about-us-main-container">
+    <div class="about-us-container">
+        <div class="about-us-left-container">
+            <div class="title-container">
+                <div class="title-text">ABOUT US</div>
+                <br />  
+                <div class="delimeter"></div> 
+            </div>
+            <br />  
+            <div class="info-container" *ngFor="let aboutInfo of abouUsArr">
+                <div class="subtitle-box">{{aboutInfo.title}}</div>
+                <br /> 
+                <div class="info-box">{{aboutInfo.info}}</div>
+                <br /> 
+            </div>
+            <div class="btn-container">
+                <div class="global-btn purple-btn" (click)="readMoreClick()">READ MORE</div>
+            </div>
+        </div>
+        <div class="about-us-right-container">
+            <img [src]="imgSrc">
+        </div>
+    </div>
+</div>

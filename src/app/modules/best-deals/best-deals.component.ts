@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-best-deals',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BestDealsComponent  implements OnInit{
 
+  @Output() readMore = new EventEmitter();
+  @Output() bookNow = new EventEmitter();
 
   public cardsArr: Array<any> = new Array<any>();
   public cardIfoObj:any ={
@@ -18,10 +20,14 @@ export class BestDealsComponent  implements OnInit{
   ngOnInit(): void {
     for(let i = 0; i < 3; i++){
       this.cardsArr.push(this.cardIfoObj);
-    }
-    console.log(this.cardsArr);
-    
+    }    
   }
 
-  public readMoreClick(){}
+  public readMoreClick(){
+    this.readMore.emit("deals")
+  }
+
+  public bookNowClick(card: any){
+    this.bookNow.emit(card)
+  }
 }

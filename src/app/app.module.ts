@@ -22,6 +22,9 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { WelcomeComponent } from './modules/welcome/welcome.component';
 import { BestDealsComponent } from './modules/best-deals/best-deals.component'
 import { NumericHighlightPipe } from './pipes/numeric-highlight.pipe';
+import { CountactUsComponent } from './modules/countact-us/countact-us.component';
+import { AboutUsComponent } from './modules/about-us/about-us.component';
+import { ChooseUsComponent } from './modules/choose-us/choose-us.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +38,10 @@ import { NumericHighlightPipe } from './pipes/numeric-highlight.pipe';
     SearchFlightComponent,
     WelcomeComponent,
     BestDealsComponent,
-    NumericHighlightPipe
+    NumericHighlightPipe,
+    CountactUsComponent,
+    AboutUsComponent,
+    ChooseUsComponent,
   ],
   imports: [
     BrowserModule,
