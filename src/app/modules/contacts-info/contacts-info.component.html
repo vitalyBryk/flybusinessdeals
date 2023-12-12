@@ -11,7 +11,18 @@
         </div>
         <br />  
         <div class="contacts-info-cards-container">
-
+            <mat-card class="contacts-info-card" *ngFor="let card of cardsArr">
+                <mat-card-content class="contacts-info-content">
+                    <p class="contact-title">{{card.title}}</p>
+                    <p class="contact-subtitle">{{card.subtitle}}</p>
+                    <br />  
+                    <p class="contact-email-title">{{card.email}}</p>
+                    <p class="contact-email">{{card.emailInfo}}</p>
+                    <br />  
+                    <p class="phone-title">{{card.phone}}</p>
+                    <p class="phone-number">{{card.phoneInfo}}</p>
+                </mat-card-content>
+              </mat-card>            
         </div>   
     </div>
 </div>
