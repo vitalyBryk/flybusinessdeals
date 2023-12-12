@@ -1,0 +1,56 @@
+::ng-deep .contact-page-main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .search-box{
+        width: 100%;
+        min-height: 280px;
+        app-search-flight{
+            .search-main-container{
+                background-size: cover;
+                background-repeat:no-repeat;
+                background-position: center;
+                padding: 0px 0px;
+            }
+            .text-box{
+                display: none !important;
+            }
+        }
+    }
+
+    .contact-us-box{
+        width: 100%;
+        height: 520px;
+        app-countact-us{
+            .contact-us-main-container{
+                background-color: #ffff;
+            }
+            .subtitle-text{
+                display: block !important;
+            }
+            
+            .contact-us-form-container{
+                .mdc-floating-label{
+                    color: #000 !important;
+                }
+                .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input{
+                    color: #000 !important;
+                }
+                ::placeholder {
+                    color: #000 !important;
+                }
+                .mat-mdc-text-field-wrapper{
+                    border: 1px solid #2f2f2f !important;
+                }
+                .mat-mdc-input-element{
+                    color: #000!important; 
+                }
+
+                .mat-mdc-form-field-icon-prefix {
+                    color: #000 !important; 
+                }
+            }
+        }
+    }
+}

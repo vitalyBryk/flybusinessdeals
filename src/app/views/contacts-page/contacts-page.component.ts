@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ContactsPageComponent {
 
+  public searchFlightClick(event:any){
+    console.log(event);
+  }
 }

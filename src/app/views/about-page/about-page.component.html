@@ -1,1 +1,12 @@
-<p>about-page works!</p>
+<div class="about-page-main-container">
+    <div class="search-box">
+            <app-search-flight (searchFlight)="searchFlightClick($event)"></app-search-flight>
+    </div>
+    <div class="about-us-box">
+        <app-about-us></app-about-us>
+    </div>
+    <div class="contact-us-box">
+            <app-countact-us></app-countact-us>
+    </div>
+</div>
+

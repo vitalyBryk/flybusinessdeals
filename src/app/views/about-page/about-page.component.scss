@@ -1,0 +1,50 @@
+::ng-deep .about-page-main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .search-box{
+        width: 100%;
+        min-height: 280px;
+        app-search-flight{
+            .search-main-container{
+                background-size: cover;
+                background-repeat:no-repeat;
+                background-position: center;
+                padding: 0px 0px;
+            }
+            .text-box{
+                display: none !important;
+            }
+        }
+    }
+    .about-us-box{
+        min-height: 880px;
+        width: 100%;
+        app-about-us{
+            .about-us-main-container{
+                flex-direction: column;
+                align-items: center;
+            }
+            .second-container{
+                display: flex !important;
+            }
+
+            .about-us-left-container{
+                justify-content: flex-start !important;
+                .btn-container{
+                    display: none;
+                }
+
+            }
+            .about-us-right-container{
+                align-items: flex-start !important;
+            } 
+        } 
+    }
+
+    .contact-us-box{
+        width: 100%;
+        height: 520px;
+    }
+}

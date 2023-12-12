@@ -21,4 +21,22 @@
             <img [src]="imgSrc">
         </div>
     </div>
+
+    <div class="about-us-container second-container">
+        <div class="about-us-left-container">
+            <br />  
+            <div class="info-container" *ngFor="let aboutInfo of abouUsArr">
+                <div class="subtitle-box">{{aboutInfo.title}}</div>
+                <br /> 
+                <div class="info-box">{{aboutInfo.info}}</div>
+                <br /> 
+            </div>
+            <div class="btn-container">
+                <div class="global-btn purple-btn" (click)="readMoreClick()">READ MORE</div>
+            </div>
+        </div>
+        <div class="about-us-right-container">
+            <img [src]="imgSrc">
+        </div>
+    </div>
 </div>

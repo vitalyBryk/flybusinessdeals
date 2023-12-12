@@ -9,6 +9,7 @@
         display: flex;
         flex-direction: column;
         width: 57.5%;
+        height: calc(100% - 100px);
         .title-container{
             display: flex;
             flex-direction: column;
@@ -26,12 +27,21 @@
                 height: 2px;
                 background-color: #ffffff;
             }
+            .subtitle-text{
+                font-family: "Ubuntu-Light";
+                color: #2f2f2f;
+                font-size: 16px;
+                line-height: 26px;
+                display: none;
+            }
         }
 
         .contact-us-form-container{
+            height: 100%;
             .contact-us-box{
                 display: flex;
                 width: 100%;
+                height: 100%;
                 .left-form-box, .right-form-box{
                     display: flex;
                     flex-direction: column;
@@ -54,7 +64,7 @@
                     .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
                         font-family: "Ubuntu-Light";
                         font-weight: 500 !important;
-                        color: #feffff !important;
+                        color: #feffff;
                         font-size: 15px;
                         line-height: 17px;
                     }
@@ -77,11 +87,11 @@
                     }
                 
                     .mat-mdc-input-element{
-                        color: #ffffff !important; 
+                        color: #ffffff; 
                     }
 
                     .mat-mdc-form-field-icon-prefix {
-                        color: #ffffff !important; 
+                        color: #ffffff; 
                     }
 
                     .mdc-line-ripple::before{
