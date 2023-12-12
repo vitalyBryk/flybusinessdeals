@@ -130,7 +130,7 @@
             align-items: center;
             .code-input{
                 background: transparent;
-                border: 1px solid #ffffff !important;
+                border: 1px solid #ffffff;
                 color: #ffffff;
                 font-family: "Ubuntu-Light";
                 font-weight: 500 !important;
@@ -141,7 +141,6 @@
 
             .code-input:focus{
                 outline: none;
-                border-color: transparent;
             }
 
             .code-container{

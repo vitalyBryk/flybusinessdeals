@@ -25,6 +25,7 @@ import { NumericHighlightPipe } from './pipes/numeric-highlight.pipe';
 import { CountactUsComponent } from './modules/countact-us/countact-us.component';
 import { AboutUsComponent } from './modules/about-us/about-us.component';
 import { ChooseUsComponent } from './modules/choose-us/choose-us.component';
+import { ContactsInfoComponent } from './modules/contacts-info/contacts-info.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { ChooseUsComponent } from './modules/choose-us/choose-us.component';
     CountactUsComponent,
     AboutUsComponent,
     ChooseUsComponent,
+    ContactsInfoComponent,
   ],
   imports: [
     BrowserModule,
