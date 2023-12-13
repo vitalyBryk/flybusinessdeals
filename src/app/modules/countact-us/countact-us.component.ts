@@ -19,6 +19,7 @@ export class CountactUsComponent implements OnInit{
 
   private createFormGroup(): FormGroup{
     return  new FormGroup({
+      subjectFormControl: new FormControl("",[Validators.required]),
       nameFormControl: new FormControl("",[Validators.required]),
       phoneFormControl: new FormControl("",[Validators.required]),
       emailFormControl: new FormControl( "",[Validators.required,Validators.email]),

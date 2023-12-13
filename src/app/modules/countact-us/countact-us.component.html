@@ -11,9 +11,19 @@
         <div class="contact-us-form-container">
             <form class="contact-us-box" [formGroup]="contactUsFormGroup">
                 <div class="left-form-box">
+
+                    <mat-form-field class="contact-us-form-field subject-field">
+                        <mat-label>SUBJECT</mat-label>
+                        <input type="text" matInput formControlName ="subjectFormControl" placeholder="Ex.purchase" class="contact-us-input">
+                        <mat-error *ngIf="contactUsFormGroup.hasError('required','nameFormControl')">
+                            Subject is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+
+
                     <mat-form-field class="contact-us-form-field">
                         <mat-label>NAME</mat-label>
-                        <input type="text" matInput formControlName ="nameFormControl" placeholder="Ex. First name" class="contact-us-input">
+                        <input type="text" matInput formControlName ="nameFormControl" placeholder="Ex.First name" class="contact-us-input">
                         <mat-error *ngIf="contactUsFormGroup.hasError('required','nameFormControl')">
                             Name is <strong>required</strong>
                         </mat-error>
@@ -24,7 +34,7 @@
                     <mat-form-field class="contact-us-form-field">
                         <mat-label>PHONE</mat-label> 
                         <span matPrefix>+1 &nbsp;</span>
-                        <input type="tel" matInput formControlName ="phoneFormControl" placeholder="Ex. 8143519152" class="contact-us-input">
+                        <input type="tel" matInput formControlName ="phoneFormControl" placeholder="Ex.8143519152" class="contact-us-input">
                         <mat-error *ngIf="contactUsFormGroup.hasError('required','phoneFormControl')">
                         Phone is <strong>required</strong>
                         </mat-error>
@@ -33,7 +43,7 @@
 
                     <mat-form-field class="contact-us-form-field">
                         <mat-label>E-MAIL</mat-label>
-                        <input type="email" matInput formControlName ="emailFormControl" placeholder="Ex. pat@example.com" class="contact-us-input">
+                        <input type="email" matInput formControlName ="emailFormControl" placeholder="Ex.pat@example.com" class="contact-us-input">
                         <mat-error *ngIf="contactUsFormGroup.hasError('email','emailFormControl') && !contactUsFormGroup.hasError('emailFormControl','required')">
                             Please enter a valid email address
                         </mat-error>

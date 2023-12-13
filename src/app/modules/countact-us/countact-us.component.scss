@@ -37,7 +37,7 @@
         }
 
         .contact-us-form-container{
-            height: 100%;
+            // height: 100%;
             .contact-us-box{
                 display: flex;
                 width: 100%;
@@ -52,6 +52,10 @@
                     .contact-us-form-field{
                         display: flex;
                         align-items: center;
+                    }
+
+                    .subject-field{
+                        display: none;
                     }
 
                     .mdc-floating-label{

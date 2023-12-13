@@ -1,4 +1,4 @@
-.beat-the-deal-main-container{
+::ng-deep .beat-the-deal-main-container{
     height: 100%;
     width: 100%;
     min-width: max-content;
@@ -35,6 +35,102 @@
                         justify-content: space-between;
                     }
                 }
+            }
+
+            .mdc-floating-label{
+                color: #000 !important;
+            }
+            .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input{
+                color: #000 !important;
+            }
+            ::placeholder {
+                color: #000 !important;
+            }
+            .mat-mdc-text-field-wrapper{
+                border: 1px solid #2f2f2f !important;
+            }
+            .mat-mdc-input-element{
+                color: #000!important; 
+            }
+
+            .mat-mdc-form-field-icon-prefix {
+                color: #000 !important; 
+            }
+
+            textarea{
+                resize: none;
+            }
+        }
+
+        .btns-container{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            .code-input{
+                background: transparent;
+                border: 1px solid  #2f2f2f ;
+                color:  #000 ;
+                font-family: "Ubuntu-Light";
+                font-weight: 500 !important;
+                font-size: 15px;
+                line-height: 17px;
+
+            }
+
+            .code-input:focus{
+                outline: none;
+            }
+            .info-box{
+                color: #2f2f2f !important;
+            }
+
+
+            .code-container{
+                display: flex;
+                width: 100%;
+                justify-content: center;
+                min-height: 45px;
+            }
+            .code-box{
+                display: flex;
+                align-items: center;
+                margin: 0px 10px;
+                font-size: 12px;
+                letter-spacing: 1px;
+                line-height: 17px;
+                text-transform: uppercase;
+                padding: 0px 20px;
+                font-family: "Montserrat-Bold";
+                user-select: none;
+                color: #ffffff;
+                background-color: #713b4d;
+            }
+
+            .btn-submit{
+                text-transform: uppercase;
+                font-family: "Montserrat-Bold";
+                margin: 0px 10px;
+                font-size: 12px;
+                letter-spacing: 1px;
+                line-height: 17px;
+                background-color: #713b4d;
+                border: none;
+                color: #ffffff;
+            }
+
+            .btn-submit:hover{
+                cursor: pointer;
+                background-color: #5f3241;
+                color: #feffffb4;
+            }
+
+            .info-box{
+                font-size: 14px;
+                letter-spacing: 1px;
+                color: #ffffff;
+                font-family: "Ubuntu-Light"
             }
         }
     }
