@@ -12,12 +12,9 @@
             <form class="contact-us-box" [formGroup]="contactUsFormGroup">
                 <div class="left-form-box">
 
-                    <mat-form-field class="contact-us-form-field subject-field">
+                    <mat-form-field class="contact-us-form-field subject-field" id="subjectField">
                         <mat-label>SUBJECT</mat-label>
                         <input type="text" matInput formControlName ="subjectFormControl" placeholder="Ex.purchase" class="contact-us-input">
-                        <mat-error *ngIf="contactUsFormGroup.hasError('required','nameFormControl')">
-                            Subject is <strong>required</strong>
-                        </mat-error>
                     </mat-form-field>
 
 

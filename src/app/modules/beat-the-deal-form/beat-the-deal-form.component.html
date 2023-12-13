@@ -10,13 +10,13 @@
             <form class="beat-the-deal-box" [formGroup]="beatTheDealFormGroup">
                 <div class="left-form-box">
                     <div class="from-to-box">
-                        <mat-form-field appearance="fill" floatLabel="always" class="from-box">
+                        <mat-form-field appearance="fill" class="from-box">
                             <mat-label>FROM</mat-label>
                             <mat-select required placeholder="Flying from" panelClass="select-panel-color" formControlName="flightFrom">
                                 <!-- <mat-option *ngFor="let state of selectedStates" [value]="state">{{state}}</mat-option> -->
                             </mat-select>
                         </mat-form-field>           
-                        <mat-form-field appearance="fill" floatLabel="always" class="flight-to-box">
+                        <mat-form-field appearance="fill"  class="flight-to-box">
                             <mat-label>TO</mat-label>
                             <mat-select required placeholder="Where are you flying" panelClass="select-panel-color" formControlName="flightTo">
                                 <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
@@ -27,14 +27,14 @@
                     </div>
 
                     <div class="departure-return-box">
-                        <mat-form-field appearance="fill" floatLabel="always" class="date-box">
+                        <mat-form-field appearance="fill"  class="date-box">
                             <mat-label>DEPARTURE</mat-label>
                             <input matInput [matDatepicker]="picker1" formControlName="departureDate"> 
                             <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
                             <mat-datepicker #picker1></mat-datepicker>
                         </mat-form-field>
                         
-                        <mat-form-field appearance="fill" floatLabel="always" class="date-box">
+                        <mat-form-field appearance="fill"  class="date-box">
                             <mat-label>RETURN</mat-label>
                             <input matInput [matDatepicker]="picker2" formControlName="returnDate">
                             <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
@@ -42,13 +42,16 @@
                         </mat-form-field>
                     </div>
 
-                    <mat-form-field appearance="fill" floatLabel="always" class="select-box">
+                    <mat-form-field appearance="fill" class="select-box">
                         <mat-label>PASSENGERS</mat-label>
                         <mat-select required placeholder="1/Business" panelClass="panel-color" formControlName="passengers">
                             <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
                                 {{food.viewValue}}
                             </mat-option> -->
                         </mat-select>
+                        <mat-error *ngIf="beatTheDealFormGroup.hasError('required','passengers')">
+                            Passengers is <strong>required</strong>
+                        </mat-error>
                     </mat-form-field>
 
                     <mat-form-field class="contact-us-form-field">
@@ -81,6 +84,11 @@
                         Email is <strong>required</strong>
                         </mat-error>
                     </mat-form-field>
+
+                    <mat-form-field class="contact-us-form-field">
+                        <mat-label>ATTACH FILE</mat-label>
+                        <input type="text" matInput formControlName ="attachFileformControl" placeholder="Ex. First name" class="contact-us-input">
+                    </mat-form-field>
                 </div>
 
                 <div class="right-form-box">
@@ -101,6 +109,30 @@
                 <input matInput type="text" [(ngModel)]="codeInputValue" class="code-input">
                 <button mat-flat-button class="btn-submit" (click)="btnSubmitClick()" [disabled]="disableBtnSubmit()">submit</button>
             </div>  
+        </div>
+        <br /> 
+        <div class="info-about-box">
+            <div class="title-container">{{infoAboutObj.title_1}}</div>
+            <br /> 
+            <div class="text-info-container">{{infoAboutObj.info_1}}</div>
+            <br /> 
+            <div class="title-container">{{infoAboutObj.title_2}}</div>
+            <br /> 
+            <div class="cards-container">
+    
+            </div>
+            <br /> 
+            <div class="title-container">{{infoAboutObj.title_3}}</div>
+            <br /> 
+            <div class="text-info-container">{{infoAboutObj.info_3}}</div>
+            <br /> 
+            <div class="title-container">{{infoAboutObj.title_4}}</div>
+            <br /> 
+            <div class="text-info-container">{{infoAboutObj.info_4}}</div>
+            <br /> 
+            <div class="title-container">{{infoAboutObj.title_5}}</div>
+            <br /> 
+            <div class="text-info-container">{{infoAboutObj.info_5}}</div>
         </div>
 
 

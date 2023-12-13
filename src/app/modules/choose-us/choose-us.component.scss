@@ -8,6 +8,8 @@
     .choose-us-container{
         display: flex;
         flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
         .title-container{
             display: flex;
             flex-direction: column;
@@ -31,7 +33,7 @@
             flex-direction: row;
             justify-content: space-evenly;
             .info-box{
-                margin: 10px 10px;
+                margin: 10px 50px;
                 display: flex;
                 flex-direction: column;
                 .icon-box{

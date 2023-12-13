@@ -1,3 +1,11 @@
 <div class="beat-page-main-container">
-    <app-beat-the-deal-form></app-beat-the-deal-form>
+    <div class="search-box">
+        <app-search-flight (searchFlight)="searchFlightClick($event)"></app-search-flight>
+    </div>
+    <div class="beat-form-box">
+        <app-beat-the-deal-form></app-beat-the-deal-form>
+    </div>
+    <div class="choose-us-box">
+        <app-choose-us></app-choose-us>
+    </div>
 </div>

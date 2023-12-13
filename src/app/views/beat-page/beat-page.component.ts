@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class BeatPageComponent {
 
+
+  public searchFlightClick(event:any){
+    console.log(event);
+  }
+
+
 }

@@ -31,6 +31,7 @@ export class BeatTheDealFormComponent implements OnInit {
       phoneFormControl: new FormControl("",[Validators.required]),
       emailFormControl: new FormControl( "",[Validators.required,Validators.email]),
       commentsFormControl: new FormControl(""),
+      attachFileformControl: new FormControl(""),
     })
   }
 
@@ -51,5 +52,18 @@ export class BeatTheDealFormComponent implements OnInit {
 
   public disableBtnSubmit(): boolean{
     return !(this.codeInputValue.toUpperCase() === this.randomCode && this.beatTheDealFormGroup.status === "VALID");
+  }
+
+  public infoAboutObj = {
+    title_1: "BETTer Deal? Let Us Know!",
+    info_1:"",
+    title_2:"How It Works:",
+    info_2:"",
+    title_3:"our Information:",
+    info_3:"",
+    title_4:"Details of Better Deal:",
+    info_4:"",
+    title_5:"Additional Comments:",
+    info_5:"",
   }
 }

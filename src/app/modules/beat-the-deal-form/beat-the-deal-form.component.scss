@@ -3,9 +3,10 @@
     width: 100%;
     min-width: max-content;
     display: flex;
-    align-self: center;
+    align-items: center;
     justify-content: center;
     .beat-the-deal-container{
+        width: 57.5%;
         .title-container{
             .title-text{
                 font-size: 35px;
@@ -27,10 +28,17 @@
                     display: flex;
                     flex-direction: column;
                     .from-to-box{
+                        >*{
+                            width: 49%;
+                        }
                         display: flex;
                         justify-content: space-between;
+
                     }
                     .departure-return-box{
+                        >*{
+                            width: 49%;
+                        }
                         display: flex;
                         justify-content: space-between;
                     }
@@ -38,17 +46,31 @@
             }
 
             .mdc-floating-label{
-                color: #000 !important;
+                color: #2f2f2f;
+                font-size: 15px;
+                font-family: "Montserrat-SemiBold";
             }
-            .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input{
-                color: #000 !important;
+
+            .mdc-text-field--filled:not(.mdc-text-field--disabled) .mdc-text-field__input {
+                font-family: "Montserrat-SemiBold";
+                font-weight: 500 !important;
+                color: #2f2f2f;
+                font-size: 15px;
+                line-height: 17px;
             }
+
             ::placeholder {
-                color: #000 !important;
+
+                color: #2f2f2f;
             }
+
             .mat-mdc-text-field-wrapper{
-                border: 1px solid #2f2f2f !important;
+                border: 1px solid #d5d5d5 !important;
+                background: transparent !important;
+                padding: 0px 10px;
+                border-radius: 0px !important;
             }
+
             .mat-mdc-input-element{
                 color: #000!important; 
             }
@@ -59,6 +81,29 @@
 
             textarea{
                 resize: none;
+            }
+            .text-area{
+                height: 100%;
+                width: 100%;
+            }
+            .left-form-box{
+                .contact-us-form-field{   
+                    margin-right: 6px;
+                }
+            }
+
+            .right-form-box{
+                flex: 1;
+                .contact-us-form-field{   
+                    margin-left: 6px;
+                }
+            }
+
+            .mat-mdc-icon-button svg {
+                fill: #7c5158 !important;
+            }
+            .mat-mdc-select-arrow {
+                fill: #7c5158 !important;
             }
         }
 
