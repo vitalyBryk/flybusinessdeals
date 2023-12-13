@@ -1,0 +1,41 @@
+.beat-the-deal-main-container{
+    height: 100%;
+    width: 100%;
+    min-width: max-content;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    .beat-the-deal-container{
+        .title-container{
+            .title-text{
+                font-size: 35px;
+                letter-spacing: 2px;
+                line-height: 17px;
+                color: #3c4e71;
+                font-family: "Montserrat-Bold";
+            }
+            .delimeter{
+                width: 170px;
+                height: 2px;
+                background-color: #713c4e;
+            }
+        }
+        .form-contaier{
+            .beat-the-deal-box{
+                display: flex;
+                .left-form-box{
+                    display: flex;
+                    flex-direction: column;
+                    .from-to-box{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    .departure-return-box{
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                }
+            }
+        }
+    }
+}

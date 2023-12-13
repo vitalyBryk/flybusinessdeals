@@ -1,0 +1,108 @@
+<div class="beat-the-deal-main-container">
+    <div class="beat-the-deal-container">
+        <div class="title-container">
+            <div class="title-text">BEAT THE DEAL</div>
+            <br />  
+            <div class="delimeter"></div> 
+            <br />
+        </div>
+        <div class="form-contaier">
+            <form class="beat-the-deal-box" [formGroup]="beatTheDealFormGroup">
+                <div class="left-form-box">
+                    <div class="from-to-box">
+                        <mat-form-field appearance="fill" floatLabel="always" class="from-box">
+                            <mat-label>FROM</mat-label>
+                            <mat-select required placeholder="Flying from" panelClass="select-panel-color" formControlName="flightFrom">
+                                <!-- <mat-option *ngFor="let state of selectedStates" [value]="state">{{state}}</mat-option> -->
+                            </mat-select>
+                        </mat-form-field>           
+                        <mat-form-field appearance="fill" floatLabel="always" class="flight-to-box">
+                            <mat-label>TO</mat-label>
+                            <mat-select required placeholder="Where are you flying" panelClass="select-panel-color" formControlName="flightTo">
+                                <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                                    {{food.viewValue}}
+                                </mat-option> -->
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+
+                    <div class="departure-return-box">
+                        <mat-form-field appearance="fill" floatLabel="always" class="date-box">
+                            <mat-label>DEPARTURE</mat-label>
+                            <input matInput [matDatepicker]="picker1" formControlName="departureDate"> 
+                            <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                            <mat-datepicker #picker1></mat-datepicker>
+                        </mat-form-field>
+                        
+                        <mat-form-field appearance="fill" floatLabel="always" class="date-box">
+                            <mat-label>RETURN</mat-label>
+                            <input matInput [matDatepicker]="picker2" formControlName="returnDate">
+                            <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                            <mat-datepicker #picker2></mat-datepicker>
+                        </mat-form-field>
+                    </div>
+
+                    <mat-form-field appearance="fill" floatLabel="always" class="select-box">
+                        <mat-label>PASSENGERS</mat-label>
+                        <mat-select required placeholder="1/Business" panelClass="panel-color" formControlName="passengers">
+                            <!-- <mat-option *ngFor="let food of foods" [value]="food.value">
+                                {{food.viewValue}}
+                            </mat-option> -->
+                        </mat-select>
+                    </mat-form-field>
+
+                    <mat-form-field class="contact-us-form-field">
+                        <mat-label>NAME</mat-label>
+                        <input type="text" matInput formControlName ="nameFormControl" placeholder="Ex. First name" class="contact-us-input">
+                        <mat-error *ngIf="beatTheDealFormGroup.hasError('required','nameFormControl')">
+                            Name is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+
+
+
+                    <mat-form-field class="contact-us-form-field">
+                        <mat-label>PHONE</mat-label> 
+                        <span matPrefix>+1 &nbsp;</span>
+                        <input type="tel" matInput formControlName ="phoneFormControl" placeholder="Ex. 8143519152" class="contact-us-input">
+                        <mat-error *ngIf="beatTheDealFormGroup.hasError('required','phoneFormControl')">
+                        Phone is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+
+
+                    <mat-form-field class="contact-us-form-field">
+                        <mat-label>E-MAIL</mat-label>
+                        <input type="email" matInput formControlName ="emailFormControl" placeholder="Ex. pat@example.com" class="contact-us-input">
+                        <mat-error *ngIf="beatTheDealFormGroup.hasError('email','emailFormControl') && !beatTheDealFormGroup.hasError('emailFormControl','required')">
+                            Please enter a valid email address
+                        </mat-error>
+                        <mat-error *ngIf="beatTheDealFormGroup.hasError('required','emailFormControl')">
+                        Email is <strong>required</strong>
+                        </mat-error>
+                    </mat-form-field>
+                </div>
+
+                <div class="right-form-box">
+                    <mat-form-field class="text-area contact-us-form-field">
+                        <mat-label>COMMENTS</mat-label>
+                        <textarea matInput formControlName ="commentsFormControl" class="contact-us-input"></textarea>
+                    </mat-form-field>
+                </div>
+            </form>
+        </div>
+        <div class="btns-container">
+            <div class="info-container">
+                <div class="info-box">To ensure the security of the information, type the code (displayed below) in the box.</div>
+            </div>
+            <br />
+            <div class="code-container">
+                <div class="code-box">{{randomCode}}</div>
+                <input matInput type="text" [(ngModel)]="codeInputValue" class="code-input">
+                <button mat-flat-button class="btn-submit" (click)="btnSubmitClick()" [disabled]="disableBtnSubmit()">submit</button>
+            </div>  
+        </div>
+
+
+    </div>
+</div>

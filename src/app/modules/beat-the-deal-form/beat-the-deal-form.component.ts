@@ -2,23 +2,31 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-countact-us',
-  templateUrl: './countact-us.component.html',
-  styleUrls: ['./countact-us.component.scss']
+  selector: 'app-beat-the-deal-form',
+  templateUrl: './beat-the-deal-form.component.html',
+  styleUrls: ['./beat-the-deal-form.component.scss']
 })
-export class CountactUsComponent implements OnInit{
+export class BeatTheDealFormComponent implements OnInit {
 
-  public contactUsFormGroup!: FormGroup;
+  public beatTheDealFormGroup!: FormGroup;
   public codeInputValue: string = "";
-  public randomCode: string = ""
+  public randomCode: string = "";
+
+
 
   ngOnInit(): void {
-    this.contactUsFormGroup = this.createFormGroup();
+    this.beatTheDealFormGroup = this.createFormGroup();
     this.randomCode = this.createRandomCode();
   }
 
+
   private createFormGroup(): FormGroup{
     return  new FormGroup({
+      flightFrom: new FormControl("",[Validators.required]),
+      flightTo:new FormControl("",[Validators.required]),
+      departureDate:new FormControl("",[Validators.required]),
+      returnDate:new FormControl("",[Validators.required]),
+      passengers:new FormControl("",[Validators.required]),
       nameFormControl: new FormControl("",[Validators.required]),
       phoneFormControl: new FormControl("",[Validators.required]),
       emailFormControl: new FormControl( "",[Validators.required,Validators.email]),
@@ -38,13 +46,10 @@ export class CountactUsComponent implements OnInit{
   }
 
   public btnSubmitClick(): void{
-    console.log(this.contactUsFormGroup , this.codeInputValue)
+    console.log(this.beatTheDealFormGroup , this.codeInputValue)
   }
 
   public disableBtnSubmit(): boolean{
-    return !(this.codeInputValue.toUpperCase() === this.randomCode && this.contactUsFormGroup.status === "VALID");
-  } 
-
-
-
+    return !(this.codeInputValue.toUpperCase() === this.randomCode && this.beatTheDealFormGroup.status === "VALID");
+  }
 }
