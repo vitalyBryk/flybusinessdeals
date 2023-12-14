@@ -178,5 +178,60 @@
                 font-family: "Ubuntu-Light"
             }
         }
+
+        .info-about-box{
+            margin: 0 auto;
+            .title-container{
+                font-size: 18px;
+                letter-spacing: 1px;
+                line-height: 25px;
+                text-transform: uppercase;
+                color: #713c4e;
+                font-family: "Montserrat-Bold";
+            }
+            .text-info-container{
+                font-size: 16px;
+                letter-spacing: 1px;
+                color: #2f2f2f;
+                font-family: "Ubuntu-Light";
+            }
+            .cards-container{
+                display: flex;
+                flex-direction: row;
+                min-height: 265px;
+                .beat-info-card{
+                    max-width: 350px;
+                    margin: 0px 10px;
+                    .beat-info-content{
+                        border-radius: 10px;
+                        background-color: #3b4d71;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        .beat-title{
+                            font-family: "Montserrat-Bold";
+                            color: #95b9ff;
+                            font-size: 60px;
+                        }
+                        .beat-subtitle{
+                            font-size: 23px; 
+                            font-family: "Montserrat-Bold";
+                            color: #ffffff;
+                            max-width: 200px;
+                            text-align: center;
+                        }
+
+                        .beat-ifo{
+                            font-size: 15px;
+                            letter-spacing: 1px;
+                            color: #c9c5d9;
+                            font-family: "Ubuntu-Light";
+                        }
+                    }
+                }
+            }
+        }
     }
 }

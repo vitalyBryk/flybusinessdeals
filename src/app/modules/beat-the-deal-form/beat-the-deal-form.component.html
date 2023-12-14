@@ -119,16 +119,24 @@
             <div class="title-container">{{infoAboutObj.title_2}}</div>
             <br /> 
             <div class="cards-container">
-    
+                <mat-card class="beat-info-card" *ngFor="let card of infoAboutObj.info_2">
+                    <mat-card-content class="beat-info-content">
+                        <div class="beat-title">{{card.num}}</div>
+                        <br /> 
+                        <div class="beat-subtitle">{{card.title}}</div>
+                        <p class="beat-ifo">{{card.info}}</p>
+                        <br />  
+                    </mat-card-content>
+                  </mat-card>   
             </div>
             <br /> 
             <div class="title-container">{{infoAboutObj.title_3}}</div>
             <br /> 
-            <div class="text-info-container">{{infoAboutObj.info_3}}</div>
+            <div class="text-info-container" [innerHTML]="infoAboutObj.info_3"></div>
             <br /> 
             <div class="title-container">{{infoAboutObj.title_4}}</div>
             <br /> 
-            <div class="text-info-container">{{infoAboutObj.info_4}}</div>
+            <div class="text-info-container" [innerHTML]="infoAboutObj.info_4"></div>
             <br /> 
             <div class="title-container">{{infoAboutObj.title_5}}</div>
             <br /> 
