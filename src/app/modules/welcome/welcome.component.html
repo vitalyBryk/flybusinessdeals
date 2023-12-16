@@ -6,7 +6,7 @@
                 <br />  
                 <div class="delimeter"></div>
             </div>
-            <div class="info-container">{{welcomeInfoText}}</div>
+            <div class="info-container" [innerHTML]="welcomeInfoText"></div>
             <div class="btn-container">
                 <div class="global-btn purple-btn" (click)="readMoreClick()">READ MORE</div>
             </div>

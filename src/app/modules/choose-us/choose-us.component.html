@@ -10,7 +10,9 @@
          <div class="choose-us-info-container">
             <div class="info-box" *ngFor="let choose of ChooseUsArr">
                 <div class="icon-box">
-                    <div class="icon"></div>
+                    <div class="icon">
+                        <i [ngClass]="choose.iconName"></i>
+                    </div>
                 </div>
                 <br />  
                 <div class="subtitle">{{choose.subtitle}}</div>
