@@ -11,6 +11,7 @@ export class BestDealsComponent  implements OnInit{
   @Output() bookNow = new EventEmitter();
 
   public cardsArr: Array<any> = new Array<any>();
+  
   public cardIfoObj:any ={
     imageSrc: "https://material.angular.io/assets/img/examples/shiba2.jpg", 
     ofertTitle: "Save up to 1,568$ off business ",
