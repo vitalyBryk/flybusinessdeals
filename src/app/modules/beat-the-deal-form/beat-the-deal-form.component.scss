@@ -1,13 +1,17 @@
 ::ng-deep .beat-the-deal-main-container{
     height: 100%;
     width: 100%;
-    min-width: max-content;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     .beat-the-deal-container{
         width: 57.5%;
+        display: flex;
+        flex-direction: column;
         .title-container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
             .title-text{
                 font-size: 35px;
                 letter-spacing: 2px;
@@ -21,9 +25,12 @@
                 background-color: #713c4e;
             }
         }
+
         .form-contaier{
             .beat-the-deal-box{
                 display: flex;
+                width: 100%;
+                height: 100%;
                 .left-form-box{
                     display: flex;
                     flex-direction: column;
@@ -33,7 +40,7 @@
                         }
                         display: flex;
                         justify-content: space-between;
-
+                        margin-right: 6px;
                     }
                     .departure-return-box{
                         >*{
@@ -41,6 +48,7 @@
                         }
                         display: flex;
                         justify-content: space-between;
+                        margin-right: 6px;
                     }
                 }
             }
@@ -84,8 +92,16 @@
             }
             .text-area{
                 height: 100%;
-                width: 100%;
             }
+
+            .left-form-box, .right-form-box{
+                display: flex;
+                flex-direction: column;
+                min-height: 200px;
+                justify-content: space-between;
+                width: 50%;
+            }    
+
             .left-form-box{
                 .contact-us-form-field{   
                     margin-right: 6px;
@@ -93,11 +109,11 @@
             }
 
             .right-form-box{
-                flex: 1;
                 .contact-us-form-field{   
                     margin-left: 6px;
                 }
             }
+
 
             .mat-mdc-icon-button svg {
                 fill: #7c5158 !important;
@@ -180,8 +196,12 @@
         }
 
         .info-about-box{
-            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1120px;
             .title-container{
+                width: 100%;
                 font-size: 18px;
                 letter-spacing: 1px;
                 line-height: 25px;
@@ -190,6 +210,7 @@
                 font-family: "Montserrat-Bold";
             }
             .text-info-container{
+                width: 100%;
                 font-size: 16px;
                 letter-spacing: 1px;
                 color: #2f2f2f;
@@ -199,17 +220,19 @@
                 display: flex;
                 flex-direction: row;
                 min-height: 265px;
+                width: 100%;
                 .beat-info-card{
                     max-width: 350px;
                     margin: 0px 10px;
+                    border-radius: 10px;
+                    background-color: #3b4d71;
+                    width: 350px;
                     .beat-info-content{
-                        border-radius: 10px;
-                        background-color: #3b4d71;
+                        text-align: center;
                         display: flex;
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
-                        height: 100%;
                         .beat-title{
                             font-family: "Montserrat-Bold";
                             color: #95b9ff;
