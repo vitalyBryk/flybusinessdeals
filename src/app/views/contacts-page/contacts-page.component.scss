@@ -84,3 +84,11 @@
         height: 1050px;
     }
 }
+
+@media (max-width:600px){
+    .contact-page-main-container{
+        .contact-us-box{
+            height: 900px !important;
+        }
+    } 
+}
