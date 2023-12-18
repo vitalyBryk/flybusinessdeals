@@ -46,6 +46,13 @@
                         background-color: #713c4e;
                         width: 123px;
                         height: 123px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i{
+                            font-size: 80px;
+                            color: lightgray;
+                        }
                     }
                 }
                     .subtitle{
