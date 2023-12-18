@@ -24,10 +24,7 @@ export class BestDealsComponent  implements OnInit{
     }    
   }
 
-  public readMoreClick(){
-    this.readMore.emit("deals")
-  }
-
+  
   public bookNowClick(card: any){
     this.bookNow.emit(card)
   }

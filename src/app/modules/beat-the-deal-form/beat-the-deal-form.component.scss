@@ -258,3 +258,31 @@
         }
     }
 }
+
+
+@media (max-width:600px){
+    .beat-the-deal-main-container{
+        .beat-the-deal-box{
+            flex-direction: column;
+        }
+        
+        .left-form-box, .right-form-box{
+            width: 100% !important;
+        }
+        
+        .left-form-box{
+            .contact-us-form-field{   
+                margin-right: 0px !important;
+            }
+        }
+        
+        .right-form-box{
+            .contact-us-form-field{   
+                margin-left: 0px !important;
+            }
+            .text-area{
+                min-height: 200px;
+            }
+        }
+    }
+}
